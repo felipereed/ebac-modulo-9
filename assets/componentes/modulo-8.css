@@ -1,0 +1,17 @@
+article {
+  background-color: var(--off-white);
+}
+
+.modulo-8-header {
+  font-size: var(--familia-destaque);
+}
+
+.modulo-respostas {
+  border: 1px solid var(--azul-escuro);
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.exercicio-8-link {
+  color: var(--amarelo);
+}

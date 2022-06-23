@@ -1,0 +1,20 @@
+:root {
+  --azul-escuro: #16697a;
+  --azul-medio: #489fb5;
+  --azul-claro: #82c0cc;
+  --off-white: #fcfaf9;
+  --amarelo: #ffa62b;
+
+  --familia-destaque: 'Roboto', sans-serif;
+  --familia-corpo: 'Lato', serif;
+
+  --peso-titulo-destaque: 900;
+  --peso-botao: 700;
+  
+  --tamanho-corpo: 1.5rem;
+  --tamanho-botao: 1.2rem;
+  --tamanho-sobre-mim: 1.2rem;
+  --tamanho-corpo-destaque: 2rem;
+  --tamanho-destaque: 3rem;
+  --tamanho-destaque-mobile: 1.8rem;
+}

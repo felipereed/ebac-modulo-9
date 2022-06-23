@@ -1,0 +1,235 @@
+@import url(_variaveis.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh
+}
+
+h1, h2, h3, li, ol {
+  line-height: 2rem;
+}
+
+li {
+  list-style: inside;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/* Style the header */
+header {
+  font-family: var(--familia-destaque);
+  font-weight: var(--peso-titulo-destaque);
+  font-size: var(--tamanho-destaque);
+  background-color: var(--azul-escuro);
+  color: var(--off-white);
+  padding: 2rem;
+  text-align: center;
+  height: 20vh;
+}
+
+section {
+  font-family: var(--familia-corpo);
+  color: var(--azul-escuro );
+} 
+
+.header-titulo {
+  padding: 0 0 0 2rem ;
+}
+.secao-azul-medio {
+  background-color: var(--azul-medio);
+}
+
+.index-info {
+  font-size: var(--tamanho-corpo);
+}
+
+.titulo-e-icone {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 40%;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  background-color: var(--azul-claro);
+  min-height: 70vh;
+}
+
+nav .titulo-da-secao {
+  font-size: var(--tamanho-corpo-destaque);
+  color: var(--amarelo);
+}
+
+article .titulo-da-secao {
+  margin-bottom: 1rem;
+}
+
+.icone {
+  max-height: 3rem;
+  padding: 0 .5rem;
+}
+
+.botao-container, .aulas-container, .exercicios-container {
+  margin: 3rem 15%;
+}
+
+.foto-container, .texto-container, .rede-social-container {
+  margin-bottom: 1rem;
+}
+
+.pagina-atual {
+  color: var(--amarelo);
+}
+
+
+
+
+/* Style the footer */
+footer {
+  font-family: var(--familia-corpo);
+  background-color: var(--azul-escuro);
+  padding: 1rem;
+  text-align: center;
+  color: var(--off-white);
+  height: 10vh;
+}
+
+a {
+  text-decoration: none;
+  /* color: var(--azul-escuro); */
+  color: var(--off-white);
+}
+
+a:hover {
+  color: var(--amarelo);
+}
+
+.foto-de-perfil {
+  border: 5px solid var(--amarelo);
+  border-radius: 50%;
+  max-height: 10rem;
+  max-width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.botao {
+  text-decoration: none;
+  font-size: var(--tamanho-botao);
+  font-weight: 900;
+  color: var(--off-white);
+  border-radius: 100px;
+  background-color: var(--amarelo);
+  align-items: center;
+  display: inline-flex;
+  min-height: 40px;
+  width: 100px;
+  padding: 0 1.5rem;
+  margin: 1rem;
+  filter: drop-shadow(1px 1px 2px gray);
+}
+
+.botao-pressionado {
+  font-size: var(--tamanho-botao);
+  font-weight: 900;
+  color: var(--off-white);
+  border-radius: 100px;
+  background-color: var(--amarelo);
+  align-items: center;
+  display: inline-flex;
+  min-height: 40px;
+  width: 100px;
+  padding: 0 1.5rem;
+  margin: 1rem;
+  filter: drop-shadow(5px 5px 5px gray);
+  filter: grayscale(50%);
+  filter: opacity(50%);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0 1rem 0;
+  margin: 1rem 2rem;
+  color: var(--off-white);
+  font-family: var(--familia-destaque);
+}
+
+.menu-container > p {
+  margin-bottom: 1rem;
+  color: var(--azul-escuro);
+}
+
+.menu-botao {
+  background-color: var(--azul-medio);
+  padding: .4rem .8rem;
+  border-radius: 15px;
+  filter: drop-shadow(1px 1px 2px gray);
+}
+
+.botao:hover,
+.botao:focus { 
+  background-color: #FAC11E;
+  color: var(--off-white)
+}
+
+.modulo-respostas {
+  border: 1px solid var(--azul-escuro);
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.header {
+  display: flex;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 425px) {
+  nav,
+  article {
+    width: 100%;
+    min-height: 0;
+  }
+  body {
+    text-align: center;
+  }
+  header {
+    font-size: var(--tamanho-destaque-mobile);
+  }
+  li {
+    padding-left: 0;
+  }
+  .menu-mobile {
+    text-align: left;
+  }
+}
+

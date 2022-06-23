@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulários</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/base/reset.css">
+    <link rel="stylesheet" href="../assets/base/style.css">
+    <link rel="stylesheet" href="../assets/componentes/formularios.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="titulo-e-icone">
+        <img src="../Imagens/devlogo.png" alt="logo">
+        <h1 class="header-titulo">Formulários</h1>
+      </div>
+    </header>
+    <!-- coluna da esquerda -->
+    <section class="secao-azul-medio">
+      <nav>
+        <div class="botao-container">
+          <a class="botao" href="../index.html">Início</a>
+          <a href="../sobre-mim.html" class="botao">Sobre</a>
+        </div>
+        <div class="aulas-container">
+          <div class="titulo-e-icone">
+            <img class="icone" src="../Imagens/aula-icone.png" alt="ícone da seção">
+            <h3 class="titulo-da-secao">Aulas</h3>
+          </div>
+          <ul class="menu-mobile">
+            <li><a href="../Aulas/03-formatacao-de-texto.html">Formatação de Texto</a></li>
+            <li><a href="../Aulas/04-tabelas.html">Tabelas</a></li>
+            <li><a href="../Aulas/05-layouts.html">Layouts</a></li>
+            <li class="pagina-atual">Formulários</li>
+          </ul>
+        </div>
+        <div class="exercicios-container">
+          <div class="titulo-e-icone">
+            <img class="icone" src="../Imagens/exercicio-icone.png" alt="ícone da seção">
+            <h3 class="titulo-da-secao">Exercícios</h3>
+          </div>
+          <ul class="menu-mobile">
+            <li><a href="../Exercicios/felipereed-exercicio-modulo-7.html">Módulo 7</a></li>
+            <li><a href="../Exercicios/felipereed-exercicio-modulo-8.html">Módulo 8</a></li>
+            <li><a href="../Exercicios/felipereed-exercicio-modulo-9.html">Módulo 9</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- coluna da direita -->
+      <article>
+        <h1>Contato</h1>
+        <p>Preencha os campos abaixo</p>
+        <form method="post">
+          <div class="formulario">
+            <label for="nome">Nome</label><br/>
+            <br/>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
+          </div>
+          <div class="formulario">
+            <label for="email">E-mail</label><br/>
+            <br/>
+            <input type="email" name="email" id="email" placeholder="Digite seu email"/>
+          </div>
+          <div class="formulario">
+            <label for="mensagem">Mensagem</label><br/>
+            <br/>
+            <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+          </div>
+          <div>
+            <p>
+              <label>Qual linguagem você prefere?</label><br/>
+              <input type="radio" name="linguagens" value="html" /> HTML
+              <input type="radio" name="linguagens" value="css" /> CSS
+              <input type="radio" name="linguagens" value="javascript" />JavaScript
+            </p>
+            <br/>
+          </div>
+          <div>
+            <p>
+              <label>Quais linguagens você sabe?</label><br/>
+              <input type="checkbox" name="linguagens" value="html" /> HTML
+              <input type="checkbox" name="linguagens" value="css" /> CSS
+              <input type="checkbox" name="linguagens" value="javascript" />JavaScript
+            </p>
+            <br/>
+          </div>
+          <div>
+            <label>Qual a sua cor favorita?</label><br/>
+            <br/>
+            <select>
+              <option value="Azul">Azul</option>
+              <option value="Verde">Verde</option>
+              <option value="Vermelho" selected>Vermelho</option>
+            </select>
+          </div>
+          <div>
+            <input class="botao" type="submit" />
+          </div>
+        </form>
+      </article>
+    </section>
+    <footer>
+      <p>Desenvolvido por Felipe</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+
+table {
+ border: 1px solid black;
+ width: 100%;
+}
+
+article {
+  background-color: var(--off-white);
+}
+
+.tabela-header {
+  font-size: var(--familia-destaque);
+}

@@ -1,0 +1,45 @@
+@import url(../base/_variaveis.css);
+
+article {
+  background-color: var(--off-white);
+}
+
+.foto {
+  max-height: 30rem;
+}
+
+.pagina-sobre-mim {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sobre-mim-header {
+  font-size: var(--familia-destaque);
+}
+
+.texto-container {
+  max-width: 40%;
+  margin: 0 1rem;
+}
+
+.sobre-mim-texto {
+  font-size: var(--tamanho-sobre-mim);
+  font-family: var(--familia-corpo);
+  color: var(--azul-escuro);
+  margin: .5rem 0;
+}
+
+@media (max-width: 1040px) {
+  
+  .texto-container {
+    max-width: 100%;
+    margin: 0 1rem;
+  }
+
+  .pagina-sobre-mim {
+    margin: 1rem 10%;
+    flex-direction: column-reverse;
+  }
+}

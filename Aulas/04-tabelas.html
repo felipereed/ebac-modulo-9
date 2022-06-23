@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+	<head>
+    <title>HTML - Tabelas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/base/reset.css">
+    <link rel="stylesheet" href="../assets/base/style.css">
+    <link rel="stylesheet" href="../assets/componentes/tabelas.css">
+	</head>
+	<body>
+    <header class="header">
+      <div class="titulo-e-icone">
+        <img src="../Imagens/devlogo.png" alt="logo">
+        <h1 class="header-titulo">Tabelas</h1>
+      </div>
+    </header>
+    <!-- coluna da esquerda -->
+    <section class="secao-azul-medio">
+      <nav>
+        <div class="botao-container">
+          <a class="botao" href="../index.html">Início</a>
+          <a href="../sobre-mim.html" class="botao">Sobre</a>
+        </div>
+        <div class="aulas-container">
+          <div class="titulo-e-icone">
+            <img class="icone" src="../Imagens/aula-icone.png" alt="ícone da seção">
+            <h3 class="titulo-da-secao">Aulas</h3>
+          </div>
+          <ul class="menu-mobile">
+            <li><a href="../Aulas/03-formatacao-de-texto.html">Formatação de Texto</a></li>
+            <li class="pagina-atual">Tabelas</li>
+            <li><a href="../Aulas/05-layouts.html">Layouts</a></li>
+            <li><a href="../Aulas/06-formularios.html">Formulários</a></li>
+          </ul>
+        </div>
+        <div class="exercicios-container">
+          <div class="titulo-e-icone">
+            <img class="icone" src="../Imagens/exercicio-icone.png" alt="ícone da seção">
+            <h3 class="titulo-da-secao">Exercícios</h3>
+          </div>
+          <ul class="menu-mobile">
+            <li><a href="../Exercicios/felipereed-exercicio-modulo-7.html">Módulo 7</a></li>
+            <li><a href="../Exercicios/felipereed-exercicio-modulo-8.html">Módulo 8</a></li>
+            <li><a href="../Exercicios/felipereed-exercicio-modulo-9.html">Módulo 9</a></li>
+          </ul>
+        </div>
+      </nav>
+    <!-- coluna da direita -->
+    <article>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+          </tr>
+        </thead>
+        <tbody>	
+          <tr align="center">
+            <td>1A</td>
+            <td>1B</td>
+            <td>1C</td>
+          </tr>
+          <tr align="right">
+            <td>2A</td>
+            <td>2B</td>
+            <td>2C</td>
+          </tr>
+          <tr>
+            <td>3A</td>
+            <td colspan="2">3BC</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Rodapé da tabela</td>
+          </tr>
+        </tfoot>
+      </table>
+      <h2>Tabela como layout</h2>
+      <table width="600">
+        <tr height="90">
+          <td colspan="4" bgcolor="#BBCCEE" align="center"> Cabeçalho</td>
+        </tr>
+        <tr height="300">
+          <td width="20" bgcolor="#0000FF"></td>
+          <td width="60%" bgcolor="#DDDDDD">
+            <h2>Título</h2>
+            <p>fdajfkdj jfdjfodsapodhgdo odihofdfhsdooi</p>
+          </td>
+          <td bgcolor="#EEEEEE">Coluna 2</td>
+          <td width="20"bgcolor="#0000FF"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+        </tr>
+      </table>
+    </article>
+    </section>
+    <footer class="footer">
+    <p>Desenvolvido por Felipe</p>
+  </footer>
+	</body>
+</html>

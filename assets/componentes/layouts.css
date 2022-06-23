@@ -1,0 +1,12 @@
+article {
+  background-color: var(--off-white);
+}
+
+
+h1, h2, p {
+  margin-bottom: 20px;
+}
+
+.layouts-header {
+  font-size: var(--familia-destaque);
+}

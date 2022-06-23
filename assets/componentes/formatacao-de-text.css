@@ -1,0 +1,7 @@
+Article {
+  background-color: var(--off-white);
+}
+
+.formatacao-header {
+  font-size: var(--familia-destaque);
+}

@@ -1,0 +1,11 @@
+article {
+  background-color: var(--off-white);
+}
+
+.formulario {
+  margin: 1rem 0;;
+}
+
+.formulario-header {
+  font-size: var(--familia-destaque);
+}
